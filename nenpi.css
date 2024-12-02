@@ -1,0 +1,140 @@
+/* スタイル設定 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"], input[type="date"], input[type="text"], select {
+    padding: 10px;
+    margin: 10px 5px;
+    width: calc(25% - 10px);
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* テーブル設定 */
+.table-container {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.average {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#chartContainer {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.chart-controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.success {
+    color: green;
+    margin-top: 10px;
+}
+
+.statistics {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#importExport {
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    input[type="number"], input[type="date"], input[type="text"], select {
+        width: calc(50% - 10px);
+    }
+}
+
+/* オドメーター入力のスタイルを調整 */
+.odometer-inputs {
+    display: none;
+    justify-content: space-between;
+    width: calc(50% - 10px);
+}
+
+.odometer-inputs.active {
+    display: flex;
+}
+
+.odometer-inputs input {
+    width: calc(50% - 5px);
+}
+
+.trip-input {
+    display: block;
+}
+
+.trip-input.inactive {
+    display: none;
+}
